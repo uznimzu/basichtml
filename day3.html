@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<title> </title>
+<head></head>
+    <body>
+        <!-- <h2>구구단 테이블</h2>
+       -->
+        <script>
+                // document.write('<table border="1">');
+
+                // document.write('<thead>');
+                // document.write('<tr>');
+                // for(let i = 2; i <= 9; i++) {
+                // document.write('<th>' + i + '단 </th>');
+                // }
+                // document.write('</tr>');
+                // document.write('</thead>');
+
+                // document.write('<tbody>');
+                // for(let i = 1; i <= 9; i++) {
+                // document.write('<tr>');
+                // for(let j = 2; j <= 9; j++) {
+                //     document.write('<td>' + j + ' * ' + i + ' = ' + (j*i) + '</td>');
+                // }
+                // document.write('</tr>');
+                // }
+                // document.write('</tbody>');
+
+                // document.write('</table>');
+
+                // var foo = {
+                //         name:"bar",
+                //         nick:"buzz",
+                //         aNumber:5,
+                //         doStuff:function() {
+                //             alert( "I'm" + this.name );
+                //             }
+                //         }
+                
+                // foo.doStuff();
+
+                // var Foo = function(name, nick){
+                //     this.name = name;
+                //     this.nick = nick;
+                // }
+
+                // Foo.prototype.aNumber = 5;
+                // Foo.prototype.doFoo = function(){
+                //     alert("I'M"+this.name);
+                // };
+
+                // var foo1 = new Foo("fool1", "nick1");
+                // foo1.doFoo();
+
+                // var foo2 = new Foo("foo2", "nick2");
+                // foo2.doFoo();
+
+                // alert(foo1.aNumber);
+
+
+                // var Rectangle = function(x1,y1,x2,y2,color){
+                //     this.x1 = x1;
+                //     this.y1 = y1;
+                //     this.x2 = x2;
+                //     this.y2 = y2;
+                //     this.color = color;
+                // }
+
+                // Rectangle.prototype.show = function(){
+                //     width =  Math.abs(this.x1-this.x2+1);
+                //     height= Math.abs(this.y1-this.y2+1);
+                //     document.write("[width:" + width + ", height:" + height + ", color:" + this.color + "] 인 사각형을 그렸습니다");
+                // }
+
+                // var RectangleShowing = new Rectangle(100,100,199,299,"#000")
+                // RectangleShowing.show();
+
+
+                var Rectangle = function(x1, y1, x2, y2, color) {
+                        this.x1 = x1;
+                        this.y1 = y1;
+                        this.x2 = x2;
+                        this.y2 = y2;
+                        this.color = color 
+                    }
+
+                Rectangle.prototype.show = function() {
+                    var width = Math.abs(this.x1 - this.x2);
+                    var height = Math.abs(this.y1 - this.y2);
+
+                    document.write("<div class='rectangle' style='width:" + width + "px; height:" + height + "px; background-color:" + this.color + ";'></div>");
+                }
+
+                var RectangleShowing = new Rectangle(100, 200, 300, 400, "#000"); 
+                RectangleShowing.show();
+
+
+        </script>
+        
+
+    
+    </body>
+
+</html>
+
